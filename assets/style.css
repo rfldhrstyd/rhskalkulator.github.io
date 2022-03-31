@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+:root {
+    --background:#e0e0e0;
+    --blue:#FD9329;
+    --black:#1D1D1D;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+    background-color: var(--background);
+    transition: all ease .3s;
+}
+
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.calculator{
+    padding: 16px;
+    display: grid;
+    grid-template-columns: repeat(4,68px);
+    border-radius: 8px;
+    background: #e0e0e0;
+    box-shadow:  20px 20px 60px #bebebe,
+                 -20px -20px 60px #ffffff;
+}
+
+.calculator span{
+    color: hsla(0, 0%, 11%, 0.5);
+    text-align: center;
+    grid-column: span 4;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 16px;
+    padding-top: 10px;
+}
+
+input{
+    height: 120px;
+    grid-column: span 4;
+    width: 100%;
+    border: none;
+    color: var(--black);
+    text-align: end;
+    font-size: 40px;
+    margin: auto;
+    padding: 20px;
+    border-bottom: 1px solid hsla(0, 0%, 11%, 0.2);
+    margin-bottom: 30px;
+}
+
+button{
+    border: none;
+    height: 50px;
+    width: 50px;
+    font-size: 24px;
+    margin: 5px;
+    color: rgba(29, 29, 29, 0.8);
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow:  20px 20px 60px #bebebe,
+                 -20px -20px 60px #ffffff;
+
+}
+
+button:hover{
+    background-color: var(--blue);
+    color: var(--background);
+}
+
+.hasil{
+    width: 115px;
+    color: #FD9329;
+}
+
+.btn-aksi{
+    border: none;
+    height: 50px;
+    width: 50px;
+    font-size: 24px;
+    margin: 5px;
+    color: var(--blue);
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow:  20px 20px 60px #bebebe,
+                 -20px -20px 60px #ffffff;
+}
+
+.btn-aksi:hover{
+    background-color: #FD9329;
+    color: var(--background);
+}
+
+.btn-aksi i{
+    background-color: transparent;
+}
+
+.btn-aksi i{
+    font-weight: 600;
+}
+
+.hasil i{
+    background-color: transparent;
+    font-weight: 800;
+}
